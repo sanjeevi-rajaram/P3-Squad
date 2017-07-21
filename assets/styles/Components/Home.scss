@@ -1,0 +1,20 @@
+.pcube-ui {
+  .ui-home {
+    .parallax-content {
+      min-width: 100%;
+      position: absolute;
+      top: 250px;
+      .quotes-title {
+        color: $white;
+        font-size: 64px;
+      }
+      .quotes {
+        color: $white;
+        font-size: 28px;
+      }
+    }
+    .parallax-content-image {
+      max-height: 208px;
+    }
+  }
+}

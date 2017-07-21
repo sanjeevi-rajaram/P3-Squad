@@ -1,0 +1,41 @@
+{
+  "name": "p3-squad",
+  "description": "BootCamp website of P3-Squad",
+  "main": "index.js",
+  "authors": [
+    "Praveenkumar K"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Webpack3",
+    "React",
+    "Redux"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "materialize": {
+      "main": [
+        "dist/css/materialize.min.css",
+        "dist/js/materialize.min.js"
+      ]
+    },
+    "img-viewerjs": {
+      "main": [
+        "dist/viewer.min.js",
+        "dist/viewer.min.css"
+      ]
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "materialize": "^0.100.2",
+    "img-viewerjs": "^1.1.0"
+  }
+}

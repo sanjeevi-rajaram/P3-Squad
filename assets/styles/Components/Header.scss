@@ -1,0 +1,35 @@
+.pcube-ui {
+  .ui-header {
+    min-width: 100%;
+    position: fixed;
+    z-index: 1000;
+    .nav-header {
+      border-radius: 5px;
+      background-color: $white;
+      .brand-logo {
+        color: $medium-black;
+        height: 100%;
+        img {
+          height: 100%;
+          margin-left: 5px;
+        }
+      }
+      .navigation {
+        .item {
+          color: $medium-black;
+          &.active {
+            height: 64px;
+            border-bottom: 5px solid $medium-black;
+          }
+        }
+      }
+    }
+    .side-nav {
+      .background {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

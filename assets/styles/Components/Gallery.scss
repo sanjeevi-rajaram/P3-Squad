@@ -1,0 +1,26 @@
+.pcube-ui {
+  .ui-gallery {
+    .slider {
+      .indicator-item {
+        &.active {
+          background-color: $medium-black;
+        }
+      }
+    }
+    .image {
+      width: 100%;
+      margin: 20px 0;
+    }
+    .card {
+      .btn-floating {
+        background-color: $black !important;
+      }
+    }
+    .gallery-album {
+      max-height: 80%;
+      .album-image {
+        width: 100%;
+      }
+    }
+  }
+}
