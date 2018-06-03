@@ -1,5 +1,21 @@
 .pcube-ui {
   .ui-contact {
-    text-align: left;
+    .container {
+      width: 90%;
+    }
+    .tabs {
+      margin-top: 20px;
+      .tab {
+        a {
+          color: $black;
+        }
+      }
+      .indicator {
+        background-color: $black;
+      }
+    }
+    .empty-content {
+      min-height: 300px;
+    }
   }
 }
