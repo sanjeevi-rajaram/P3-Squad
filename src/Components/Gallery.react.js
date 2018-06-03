@@ -78,18 +78,97 @@ class Gallery extends React.Component {
               </span>
             </div>
             <div className="col s12 m12 l12">
+              <h5>Personal Training</h5>
               <div className="col s12 m6 l4">
                 <div className="card">
                   <div className="card-image">
-                    <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
-                    <span className="card-title">Image Title</span>
+                    <img className="image" src="images/gallery-weight-loss.jpg" alt="Picture"/>
+                    <span className="card-title">Weight Loss</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
                       <i className="material-icons">launch</i>
                     </a>
                   </div>
                   <div className="card-content">
-                    <p>I am a very simple card</p>
+                    <p>Duration : 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/gallery-weight-gain.JPG" alt="Picture"/>
+                    <span className="card-title">Weight Gain</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Duration : 8 to 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/gallery-fat-loss.JPG" alt="Picture"/>
+                    <span className="card-title">Fat Loss</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Duration : 8 to 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/gallery-transform.JPG" alt="Picture"/>
+                    <span className="card-title">Transform</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Duration : 8 to 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/gallery-strength-training.jpg" alt="Picture"/>
+                    <span className="card-title">Strength Training</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Duration : 8 to 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col s12 m12 l12">
+              <h5>Pilates Training</h5>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
+                    <span className="card-title">Boot Camp</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Tuesday/Thursday/Saturday&Sunday</p>
                   </div>
                 </div>
               </div>
@@ -97,14 +176,14 @@ class Gallery extends React.Component {
                 <div className="card">
                   <div className="card-image">
                     <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
-                    <span className="card-title">Image Title</span>
+                    <span className="card-title">Beach Cardio</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
                       <i className="material-icons">launch</i>
                     </a>
                   </div>
                   <div className="card-content">
-                    <p>I am a very simple card</p>
+                    <p>Sunday</p>
                   </div>
                 </div>
               </div>
@@ -112,14 +191,14 @@ class Gallery extends React.Component {
                 <div className="card">
                   <div className="card-image">
                     <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
-                    <span className="card-title">Image Title</span>
+                    <span className="card-title">Special Cardio Training</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
                       <i className="material-icons">launch</i>
                     </a>
                   </div>
                   <div className="card-content">
-                    <p>I am a very simple card</p>
+                    <p>HIIT(Tabatta) - 12 weeks</p>
                   </div>
                 </div>
               </div>

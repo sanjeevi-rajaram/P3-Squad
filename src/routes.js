@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {HashRouter as Router, Route} from "react-router-dom";
 import AppContainer from "./Components/AppContainer";
 import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
@@ -9,13 +9,13 @@ import Faq from "./Components/Faq";
 
 const AppRouter = () => (
   <Router basename="/">
-    <Route path="/">
+    <Route exact path="/">
       <AppContainer>
         <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/programme" component={Gallery}/>
-        <Route path="/testimonial" component={Faq}/>
-        <Route path="/blog" component={Contact}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/programme" component={Gallery}/>
+        <Route exact path="/testimonial" component={Faq}/>
+        <Route exact path="/blog" component={Contact}/>
       </AppContainer>
     </Route>
   </Router>
