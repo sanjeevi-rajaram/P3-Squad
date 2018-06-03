@@ -1,11 +1,9 @@
 .pcube-ui {
   .ui-header {
-    min-width: 100%;
-    position: fixed;
-    z-index: 1000;
     .nav-header {
-      border-radius: 5px;
+      position: fixed;
       background-color: $white;
+      z-index: 1;
       .brand-logo {
         color: $medium-black;
         height: 100%;

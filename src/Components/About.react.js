@@ -1,72 +1,99 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 class About extends React.Component {
+  componentDidMount() {
+    this.el = $(ReactDOM.findDOMNode(this));
+    this.el.find(".collapsible").collapsible();
+  }
+
   render() {
     return (
       <div className="ui-about">
         <div className="container">
           <div className="row">
             <div className="col s12 m12 l12">
-              <h3>About</h3>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                doloraugue, sollicitudin eu risus eget, luctus gravida ante.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Aenean lectus lectus, sodales
-                lacinia luctus et, egestas egestas lacus. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Nam pharetra pharetra nisl,
-                cursus consectetur arcu viverra non. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis
-                egestas. Donec cursus sodales dui at venenatis. Quisque bibendum
-                tortor nec mi venenatis, id congue ipsum auctor. Nunc sed leo a
-                enim aliquam consectetur. Curabitur a velit malesuada, sodales
-                est non, porttitor ipsum.
-              </span>
+              <h3>About Us</h3>
+              <div className="margin-tb-10">
+                <span className="content">
+                  We are one of the most dedicated
+                  Physical Training Squad Chennai.
+                </span>
+              </div>
+              <div className="margin-tb-10">
+                <span className="content">
+                  We offer the best service to solve your fitness problems,
+                  whatever your life style may be after all the complex structure
+                  of our body-core is identical for all human beings. Many
+                  hundreds of Fitness aspirants are getting benefitted every year
+                  through our valuable service.
+                </span>
+              </div>
+              <div className="quote-container">
+                <span className="quote">
+                  “A BOLD CALL FOR FITNESS TO ALL”
+                </span>
+              </div>
+              <div className="margin-tb-10">
+                <span className="content">
+                  You are always welcome to have your fitness consultancy at our
+                  &nbsp;<span className="bold-text">“P-3 Fitness Squad”</span>.
+                </span>
+              </div>
+              <div className="margin-tb-10">
+                <span className="content">
+                  We offer the best service to solve your fitness problems,
+                  whatever your life style may be after all the complex structure
+                  of our body-core is identical for all human beings.
+                </span>
+              </div>
             </div>
             <div className="col s12 m12 l12">
-              <ul className="timeline">
+              <h5>Our P-3 Fitness squad organizes,</h5>
+              <ul className="collapsible popout">
                 <li>
-                  <span className="timeline-label">Pain</span>
-                  <i className="timeline-icon z-depth-2 material-icons">
-                    format_quote
-                  </i>
-                  <div className="timeline-content">
-                    <h4 className="title">How we acheive?</h4>
-                    <p className="light-text">
-                      Sed ut perspiciatis unde omnis iste natus error
-                      sitvoluptatem accusantium doloremque laudantium, totam rem
-                      aperiam,eaque ipsaquae ab illo inventore veritatis etquasi
-                      architecto beatae vitae dicta sunt explicabo.
-                    </p>
+                  <div className="collapsible-header active">
+                    <i className="material-icons">person</i>
+                    Personal Trainings
+                  </div>
+                  <div className="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
                   </div>
                 </li>
                 <li>
-                  <span className="timeline-label">Passion</span>
-                  <i className="timeline-icon z-depth-2 material-icons">
-                    format_quote
-                  </i>
-                  <div className="timeline-content">
-                    <h4 className="title">What we reach?</h4>
-                    <p className="light-text">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt.
-                    </p>
+                  <div className="collapsible-header">
+                    <i className="material-icons">beenhere</i>
+                    Indoor Gym workouts
+                  </div>
+                  <div className="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
                   </div>
                 </li>
                 <li>
-                  <span className="timeline-label">Progress</span>
-                  <i className="timeline-icon z-depth-2 material-icons">
-                    format_quote
-                  </i>
-                  <div className="timeline-content">
-                    <h4 className="title">Where we move?</h4>
-                    <p className="light-text">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor
-                      sit amet, consectetur, adipisci velit, sed quia nonnumquam
-                      eius modi tempora incidunt ut labore et dolore magnam
-                      aliquam quaerat voluptatem.
-                    </p>
+                  <div className="collapsible-header">
+                    <i className="material-icons">place</i>
+                    Outdoor special Cardio sessions
+                  </div>
+                  <div className="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="collapsible-header">
+                    <i className="material-icons">directions_run</i>
+                    Diabetes fitness training
+                  </div>
+                  <div className="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="collapsible-header">
+                    <i className="material-icons">wb_sunny</i>
+                    Summer boot camp
+                  </div>
+                  <div className="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
                   </div>
                 </li>
               </ul>

@@ -12,10 +12,10 @@ const AppRouter = () => (
     <Route path="/">
       <AppContainer>
         <Route exact path="/" component={Home}/>
-        <Route path="/gallery" component={Gallery}/>
         <Route path="/about" component={About}/>
-        <Route path="/contact" component={Contact}/>
-        <Route path="/faq" component={Faq}/>
+        <Route path="/programme" component={Gallery}/>
+        <Route path="/testimonial" component={Faq}/>
+        <Route path="/blog" component={Contact}/>
       </AppContainer>
     </Route>
   </Router>

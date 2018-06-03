@@ -20,7 +20,7 @@ class Header extends React.Component {
         <nav className="nav-header">
           <div className="nav-wrapper">
             <NavLink to="/" className="brand-logo">
-              <img src="images/logo.png"/>
+              <img src="images/logo.jpg"/>
             </NavLink>
             <ul className="navigation right hide-on-med-and-down">
               <li>
@@ -30,22 +30,22 @@ class Header extends React.Component {
               </li>
               <li>
                 <NavLink exact to="/about" className="item" activeClassName="active">
-                  About
+                  About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/gallery" className="item" activeClassName="active">
-                  Gallery
+                <NavLink exact to="/programme" className="item" activeClassName="active">
+                  Programme
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/faq" className="item" activeClassName="active">
-                  FAQ
+                <NavLink exact to="/testimonial" className="item" activeClassName="active">
+                  Testimonial
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/contact" className="item" activeClassName="active">
-                  Contact
+                <NavLink exact to="/blog" className="item" activeClassName="active">
+                  Blog
                 </NavLink>
               </li>
             </ul>
@@ -66,34 +66,36 @@ class Header extends React.Component {
                 <img src="images/side-navigation.jpg"/>
               </div>
               <a href="/">
-                <img className="circle" src="images/yuna.jpg"/>
+                <img className="circle" src="images/profile.jpg"/>
               </a>
               <a href="/">
-                <span className="white-text name">John Doe</span>
+                <span className="white-text name">Sanjeevi Rajaram</span>
               </a>
               <a href="/">
-                <span className="white-text email">jdandturk@gmail.com</span>
+                <span className="white-text email">
+                  sanjeevi.rajaram@gmail.com
+                </span>
               </a>
             </div>
           </li>
           <li>
             <NavLink exact to="/about" activeClassName="active">
-              About
+              About Us
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/gallery" activeClassName="active">
-              Gallery
+            <NavLink exact to="/programme" activeClassName="active">
+              Programme
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/faq" activeClassName="active">
-              FAQ
+            <NavLink exact to="/testimonial" activeClassName="active">
+              Testimonial
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/contact" activeClassName="active">
-              Contact
+            <NavLink exact to="/blog" activeClassName="active">
+              Blog
             </NavLink>
           </li>
         </ul>

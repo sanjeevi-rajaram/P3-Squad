@@ -14,7 +14,21 @@
       }
     }
     .parallax-content-image {
-      max-height: 208px;
+      max-height: 240px;
+    }
+    .card {
+      height: 280px;
+      .card-image {
+        max-height: 100%;
+        overflow: hidden;
+      }
+      .card-title {
+        font-weight: 700;
+      }
+    }
+    .home-content {
+      font-size: 18px;
+      margin: 0;
     }
   }
 }
