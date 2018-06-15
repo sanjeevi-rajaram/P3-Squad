@@ -22,5 +22,20 @@
         width: 100%;
       }
     }
+    .content {
+      font-size: 18px;
+      text-align: justify;
+    }
+    .album-tabs {
+      background-color: transparent;
+      .tab {
+        a {
+          color: $black;
+        }
+      }
+      .indicator {
+        background-color: $black;
+      }
+    }
   }
 }

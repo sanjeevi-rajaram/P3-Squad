@@ -15,12 +15,10 @@ class Footer extends React.Component {
             <div className="col s12 m8 l8">
               <h5>Excaliburs-P3</h5>
               <div className="col s6 m6 l6">
-                <p>Eekaduthangal</p>
-                <p>Eekaduthangal</p>
+                <p>Ekkatuthangal</p>
+                <p>Adyar</p>
               </div>
               <div className="col s6 m6 l6">
-                <p>Adyar</p>
-                <p>Adyar</p>
               </div>
             </div>
             <div className="col s12 m4 l4">

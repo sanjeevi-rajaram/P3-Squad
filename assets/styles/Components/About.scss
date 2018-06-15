@@ -12,5 +12,21 @@
     .content {
       font-size: 18px;
     }
+    .collection {
+      margin-top: 25px;
+      .secondary-content {
+        .material-icons {
+          color: $black;
+        }
+      }
+    }
+    .card {
+      .card-image {
+        img {
+          height: 92px;
+          margin: 5px;
+        }
+      }
+    }
   }
 }
