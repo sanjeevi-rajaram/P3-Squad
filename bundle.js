@@ -27250,28 +27250,15 @@ var Footer = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "p",
                   null,
-                  "Eekaduthangal"
+                  "Ekkatuthangal"
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "p",
                   null,
-                  "Eekaduthangal"
+                  "Adyar"
                 )
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "col s6 m6 l6" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "p",
-                  null,
-                  "Adyar"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "p",
-                  null,
-                  "Adyar"
-                )
-              )
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col s6 m6 l6" })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "div",
@@ -28703,12 +28690,16 @@ var Gallery = function (_React$Component) {
     value: function componentDidMount() {
       this.el = $(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this));
       this.el.find(".slider").slider();
+      this.el.find(".tabs").tabs();
       this.el.find("#album-modal").modal({
         dismissible: true,
         startingTop: "4%",
         endingTop: "10%"
       });
-      new Viewer(document.getElementById("album"), {
+      new Viewer(document.getElementById("bootcamp"), {
+        inline: false
+      });
+      new Viewer(document.getElementById("beachcardio"), {
         inline: false
       });
     }
@@ -28716,6 +28707,7 @@ var Gallery = function (_React$Component) {
     key: "__openAlbum__REACT_HOT_LOADER__",
     value: function __openAlbum__REACT_HOT_LOADER__(albumIndex) {
       this.el.find("#album-modal").modal("open");
+      this.el.find(".tabs").tabs("select_tab", "bootcamp");
     }
   }, {
     key: "__closeAlbum__REACT_HOT_LOADER__",
@@ -28746,12 +28738,7 @@ var Gallery = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "h3",
                   null,
-                  "This is our big Tagline!"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "h5",
-                  { className: "light grey-text text-lighten-3" },
-                  "Heres our small slogan."
+                  "P3-Squad"
                 )
               )
             ),
@@ -28765,12 +28752,7 @@ var Gallery = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "h3",
                   null,
-                  "Left Aligned Caption"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "h5",
-                  { className: "light grey-text text-lighten-3" },
-                  "Heres our small slogan."
+                  "Pain"
                 )
               )
             ),
@@ -28784,12 +28766,7 @@ var Gallery = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "h3",
                   null,
-                  "Right Aligned Caption"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "h5",
-                  { className: "light grey-text text-lighten-3" },
-                  "Heres our small slogan."
+                  "Passion"
                 )
               )
             ),
@@ -28803,12 +28780,7 @@ var Gallery = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "h3",
                   null,
-                  "This is our big Tagline!"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  "h5",
-                  { className: "light grey-text text-lighten-3" },
-                  "Heres our small slogan."
+                  "Progress"
                 )
               )
             )
@@ -28830,8 +28802,8 @@ var Gallery = function (_React$Component) {
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "span",
-                null,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin doloraugue, sollicitudin eu risus eget, luctus gravida ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean lectus lectus, sodales lacinia luctus et, egestas egestas lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra pharetra nisl, cursus consectetur arcu viverra non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec cursus sodales dui at venenatis. Quisque bibendum tortor nec mi venenatis, id congue ipsum auctor. Nunc sed leo a enim aliquam consectetur. Curabitur a velit malesuada, sodales est non, porttitor ipsum."
+                { className: "content" },
+                "If your busy schedule doesn\"t allow you to exercise for a 30-minute period during the day, you have the option to break it up into bouts of 10 minutes or more. Research has shown that the health benefits are similar when you do this!"
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -28841,6 +28813,31 @@ var Gallery = function (_React$Component) {
                 "h5",
                 null,
                 "Personal Training"
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "span",
+                { className: "col s12 m12 l12 content margin-b-10" },
+                "Two types of physical activity are most important for managing diabetes: aerobic exercise and strength training."
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "span",
+                { className: "col s12 m12 l12 content" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "span",
+                  { className: "bold-text" },
+                  "Aerobic exercise"
+                ),
+                "\xA0 helps your body use\xA0insulin\xA0better. It makes your heart and bones strong, relieves stress, improves blood\xA0circulation, and reduces your risk for heart disease by lowering\xA0blood glucose\xA0and\xA0blood pressureand improving\xA0cholesterol\xA0levels."
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "span",
+                { className: "col s12 m12 l12 content" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "span",
+                  { className: "bold-text" },
+                  "Strength training"
+                ),
+                "\xA0 (also called resistance training) makes your body more sensitive to insulin and can lower blood glucose. It helps to maintain and build strong muscles and bones, reducing your risk for osteoporosis and bone fractures."
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
@@ -29047,6 +29044,11 @@ var Gallery = function (_React$Component) {
                 "Pilates Training"
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "span",
+                { className: "col s12 m12 l12 content" },
+                "Exercising outdoors provides an opportunity to be physically active in a constantly changing environment. The more challenging the terrain, the harder the body has to work to sustain an efficient work rate. Cardio machines in the gym can provide numerous benefits, but doing the same movement pattern over and over again could potentially cause an overuse injury. Walking, hiking or running on terrain that is constantly changing teaches the body how to adapt to a changing environment."
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "col s12 m6 l4" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -29055,7 +29057,7 @@ var Gallery = function (_React$Component) {
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
                     { className: "card-image" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/side-navigation.jpg", alt: "Picture" }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/gallery-bootcamp.JPG", alt: "Picture" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       "span",
                       { className: "card-title" },
@@ -29094,7 +29096,7 @@ var Gallery = function (_React$Component) {
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
                     { className: "card-image" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/side-navigation.jpg", alt: "Picture" }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/gallery-beach-cardio.JPG", alt: "Picture" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       "span",
                       { className: "card-title" },
@@ -29133,7 +29135,7 @@ var Gallery = function (_React$Component) {
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
                     { className: "card-image" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/side-navigation.jpg", alt: "Picture" }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "image", src: "images/gallery-special-cardio.JPG", alt: "Picture" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       "span",
                       { className: "card-title" },
@@ -29176,9 +29178,30 @@ var Gallery = function (_React$Component) {
               "div",
               { className: "row" },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h4",
+                "div",
                 { className: "col s11 m11 l11" },
-                "Album"
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "ul",
+                  { className: "tabs album-tabs" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "tab col s3" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      "a",
+                      { className: "active", href: "#bootcamp" },
+                      "Boot Camp"
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "tab col s3" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      "a",
+                      { href: "#beachcardio" },
+                      "Beach Cardio"
+                    )
+                  )
+                )
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "i",
@@ -29191,52 +29214,27 @@ var Gallery = function (_React$Component) {
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "ul",
-              { id: "album", className: "row" },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 1" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 2" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 3" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 1" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 2" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 3" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 1" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 2" })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "li",
-                { className: "col s4 m3 l2" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image", src: "images/side-navigation.jpg", alt: "Picture 3" })
-              )
+              { id: "bootcamp", className: "row" },
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(function (number) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "li",
+                  { key: number, className: "col s4 m3 l2" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image",
+                    src: "images/album-bootcamp-" + number + ".JPG" })
+                );
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "ul",
+              { id: "beachcardio", className: "row" },
+              [1, 2, 3, 4, 5, 6, 7, 8].map(function (number) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "li",
+                  { key: number, className: "col s4 m3 l2" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "album-image",
+                    src: "images/album-beachcardio-" + number + ".JPG" })
+                );
+              })
             )
           )
         )
@@ -29298,7 +29296,6 @@ var About = function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.el = $(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this));
-      this.el.find(".collapsible").collapsible();
     }
   }, {
     key: "render",
@@ -29382,120 +29379,238 @@ var About = function (_React$Component) {
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "ul",
-                { className: "collapsible popout" },
+                { className: "collection" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "li",
-                  null,
+                  { className: "collection-item" },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-header active" },
+                    null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "i",
-                      { className: "material-icons" },
-                      "person"
+                      "div",
+                      { className: "secondary-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "i",
+                        { className: "material-icons" },
+                        "person"
+                      )
                     ),
                     "Personal Trainings"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "collapsible-body" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "span",
-                      null,
-                      "Lorem ipsum dolor sit amet."
-                    )
                   )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "li",
-                  null,
+                  { className: "collection-item" },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-header" },
+                    null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "i",
-                      { className: "material-icons" },
-                      "beenhere"
+                      "div",
+                      { className: "secondary-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "i",
+                        { className: "material-icons" },
+                        "beenhere"
+                      )
                     ),
                     "Indoor Gym workouts"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "collapsible-body" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "span",
-                      null,
-                      "Lorem ipsum dolor sit amet."
-                    )
                   )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "li",
-                  null,
+                  { className: "collection-item" },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-header" },
+                    null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "i",
-                      { className: "material-icons" },
-                      "place"
+                      "div",
+                      { className: "secondary-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "i",
+                        { className: "material-icons" },
+                        "place"
+                      )
                     ),
                     "Outdoor special Cardio sessions"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "collapsible-body" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "span",
-                      null,
-                      "Lorem ipsum dolor sit amet."
-                    )
                   )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "li",
-                  null,
+                  { className: "collection-item" },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-header" },
+                    null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "i",
-                      { className: "material-icons" },
-                      "directions_run"
+                      "div",
+                      { className: "secondary-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "i",
+                        { className: "material-icons" },
+                        "directions_run"
+                      )
                     ),
                     "Diabetes fitness training"
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "collapsible-body" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "span",
-                      null,
-                      "Lorem ipsum dolor sit amet."
-                    )
                   )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "li",
-                  null,
+                  { className: "collection-item" },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-header" },
+                    null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "i",
-                      { className: "material-icons" },
-                      "wb_sunny"
+                      "div",
+                      { className: "secondary-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "i",
+                        { className: "material-icons" },
+                        "wb_sunny"
+                      )
                     ),
                     "Summer boot camp"
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "col s12 m12 l12" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h5",
+                null,
+                "Why do you need a personal trainer?"
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "margin-b-10 margin-t-20" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "span",
+                  { className: "content" },
+                  "A\xA0",
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "span",
+                    { className: "bold-text" },
+                    "Personal trainer"
+                  ),
+                  "\xA0 is the\xA0fitness\xA0professional and the motivation you need. Your personal trainer\xA0is extremely important\xA0to your\xA0fitness\xA0success. Once the goals are set, a\xA0personal trainer\xA0will teach proper exercise methods and progressions. Each piece of information taught has one purpose:\xA0",
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "span",
+                    { className: "bold-text" },
+                    "to reach your\xA0fitness goals"
+                  ),
+                  "."
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "col s12 m12 l12" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h5",
+                null,
+                "Advantages of Commercial Gym"
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "div",
+                  { className: "card horizontal" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-image" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/about-1.jpg" })
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "collapsible-body" },
+                    { className: "card-stacked" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      "span",
-                      null,
-                      "Lorem ipsum dolor sit amet."
+                      "div",
+                      { className: "card-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "p",
+                        null,
+                        "Commercial gyms will be filled with every imaginable option in training equipment; from barbells, dumbbells and kettlebells to advanced variable resistance training machines"
+                      )
                     )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "div",
+                  { className: "card horizontal" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-stacked" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      "div",
+                      { className: "card-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "p",
+                        null,
+                        "A commercial gym can be a great combination of self-improvement and social club, making exercise a way to make new friends and network"
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-image" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/about-2.png" })
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "div",
+                  { className: "card horizontal" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-image" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/about-3.png" })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-stacked" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      "div",
+                      { className: "card-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "p",
+                        null,
+                        "If you want to try a new training protocol, the equipment you need will be there"
+                      )
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "div",
+                  { className: "card horizontal" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-stacked" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      "div",
+                      { className: "card-content" },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "p",
+                        null,
+                        "If you get bored with your routine, changing things up is as easy as walking across the gym floor"
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "card-image" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/about-4.png" })
                   )
                 )
               )
