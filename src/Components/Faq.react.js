@@ -10,35 +10,39 @@ class Faq extends React.Component {
     return (
       <div className="ui-faq">
         <div className="container">
-          <h4>Tips to acheive</h4>
+          <h4>Testimonial</h4>
           <div className="row">
-            <div className="col s12 m12 l12">
-              <div className="question col s12 m12 l12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nulla ornare consectetur est, id placerat est accumsan eget?
+            <div className="col s12 m12 l12 testimonial-container">
+              <img src="images/home-progress.jpg" className="col s12 m6 l4"/>
+              <div className="col s12 m6 l8">
+                <p className="content">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <p className="author right">
+                  - Lorem Ipsum
+                </p>
               </div>
-              <div className="answer col s12 m12 l12">
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry
-                standard dummy text ever since the 1500, when an unknown
-                printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries.
+            </div>
+            <div className="col s12 m12 l12 testimonial-container">
+              <div className="col s12 m6 l8">
+                <p className="content">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <p className="author left">
+                  - Lorem Ipsum
+                </p>
               </div>
-              <div className="question col s12 m12 l12">
-                Cras convallis felis eget leo sollicitudin laoreet. Etiam
-                tincidunt felis libero, a eleifend purus fermentum vitae?
-              </div>
-              <div className="answer col s12 m12 l12">
-                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Pellentesque pulvinar ac lectus sit amet tristique.
-              </div>
-              <div className="question col s12 m12 l12">
-                Phasellus commodo euismod risus, nec maximus mi gravida et?
-              </div>
-              <div className="answer col s12 m12 l12">
-                Morbi bibendum placerat nibh et efficitur. Suspendisse et erat
-                ut sapien finibus varius. Pellentesque rhoncus velit nisi, non
-                congue neque faucibus quis.
+              <img src="images/home-pain.jpg" className="col s12 m6 l4"/>
+            </div>
+            <div className="col s12 m12 l12 testimonial-container">
+              <img src="images/home-passion.jpg" className="col s12 m6 l4"/>
+              <div className="col s12 m6 l8">
+                <p className="content">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <p className="author right">
+                  - Lorem Ipsum
+                </p>
               </div>
             </div>
           </div>
