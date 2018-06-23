@@ -1,4 +1,5 @@
 /* eslint-disable no-magic-numbers */
+require("babel-register");
 import gulp from "gulp";
 import util from "gulp-util";
 import del from "del";

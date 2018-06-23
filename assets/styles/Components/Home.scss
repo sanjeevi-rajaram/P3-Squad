@@ -13,9 +13,6 @@
         font-size: 28px;
       }
     }
-    .parallax-content-image {
-      max-height: 240px;
-    }
     .card {
       height: 280px;
       .card-image {
@@ -30,6 +27,24 @@
       font-size: 18px;
       margin: 0;
       text-align: justify;
+    }
+    .mail-button {
+      margin-top: 10px;
+      .material-icons {
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+    }
+    .mail-header {
+      border-bottom: 1px solid $light-grey;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      .header {
+        margin: 0;
+      }
+      .material-icons {
+        float: right;
+      }
     }
   }
 }
