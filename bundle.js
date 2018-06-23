@@ -28468,17 +28468,85 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
 
-  function Home() {
+  function Home(props) {
     _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+    _this.openModal = function () {
+      return _this.__openModal__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
+    _this.handleFieldChange = function () {
+      return _this.__handleFieldChange__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
+    _this.sendMail = function () {
+      return _this.__sendMail__REACT_HOT_LOADER__.apply(_this, arguments);
+    };
+
+    _this.state = {
+      name: "",
+      email: "",
+      message: ""
+    };
+    return _this;
   }
 
   _createClass(Home, [{
+    key: "__sendMail__REACT_HOT_LOADER__",
+    value: function __sendMail__REACT_HOT_LOADER__() {
+      return this.__sendMail__REACT_HOT_LOADER__.apply(this, arguments);
+    }
+  }, {
+    key: "__handleFieldChange__REACT_HOT_LOADER__",
+    value: function __handleFieldChange__REACT_HOT_LOADER__() {
+      return this.__handleFieldChange__REACT_HOT_LOADER__.apply(this, arguments);
+    }
+  }, {
+    key: "__openModal__REACT_HOT_LOADER__",
+    value: function __openModal__REACT_HOT_LOADER__() {
+      return this.__openModal__REACT_HOT_LOADER__.apply(this, arguments);
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.el = $(__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this));
       this.el.find(".parallax").parallax();
+      this.el.find("#mail-modal").modal();
+      emailjs.init("user_UTwMgKiQQRCc4q7RRqDqi");
+    }
+  }, {
+    key: "__openModal__REACT_HOT_LOADER__",
+    value: function __openModal__REACT_HOT_LOADER__() {
+      this.el.find("#mail-modal").modal("open");
+    }
+  }, {
+    key: "__handleFieldChange__REACT_HOT_LOADER__",
+    value: function __handleFieldChange__REACT_HOT_LOADER__(event) {
+      var state = {};
+      state[event.target.name] = event.target.value;
+      this.setState(state);
+    }
+  }, {
+    key: "__sendMail__REACT_HOT_LOADER__",
+    value: function __sendMail__REACT_HOT_LOADER__() {
+      var _state = this.state,
+          name = _state.name,
+          email = _state.email,
+          message = _state.message;
+
+      var template_params = {
+        "from_email": email,
+        "from_name": name,
+        "message_html": "<p>" + message + "</p>"
+      };
+      var service_id = "gmail";
+      var template_id = "p3_squad";
+      if (!this.el.find(".validate").hasClass("invalid") && name && email && message) {
+        emailjs.send(service_id, template_id, template_params);
+        this.el.find("#mail-modal").modal("close");
+      }
     }
   }, {
     key: "render",
@@ -28512,7 +28580,18 @@ var Home = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "col s12 m4 l3" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "parallax-content-image", src: "images/profile.jpg" })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "col s12 m12 l12", src: "images/profile.jpg" }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "button",
+                  { onClick: this.openModal,
+                    className: "col s12 m12 l12 btn black mail-button waves-effect waves-light" },
+                  "Contact",
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "i",
+                    { className: "material-icons" },
+                    "mail"
+                  )
+                )
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
@@ -28603,6 +28682,90 @@ var Home = function (_React$Component) {
             "div",
             { className: "parallax" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/home-parallax-2.jpg" })
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "div",
+          { id: "mail-modal", className: "modal mail-modal modal-fixed-footer" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "modal-content" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "row mail-header" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h5",
+                { className: "col s11 m11 l11 header" },
+                "Send Mail"
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "i",
+                { className: "material-icons modal-close" },
+                "close"
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "row" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12 input-field" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "i",
+                  { className: "material-icons prefix" },
+                  "person"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true,
+                  onChange: this.handleFieldChange, className: "validate" }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "label",
+                  { htmlFor: "name" },
+                  "First Name"
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12 input-field" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "i",
+                  { className: "material-icons prefix" },
+                  "phone"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { placeholder: "E-Mail", name: "email", type: "email", required: true,
+                  onChange: this.handleFieldChange, className: "validate" }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "label",
+                  { htmlFor: "email", "data-error": "This doesn't look like an e-mail" },
+                  "E-Mail"
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m12 l12 input-field" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { name: "message", placeholder: "Type your message here",
+                  onChange: this.handleFieldChange, required: true,
+                  className: "materialize-textarea validate" }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "label",
+                  { htmlFor: "message" },
+                  "Message"
+                )
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "modal-footer" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "a",
+              { className: "waves-effect waves-green btn-flat" },
+              "Send"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "a",
+              { className: "modal-close waves-effect waves-green btn-flat" },
+              "Cancel"
+            )
           )
         )
       );
@@ -31192,43 +31355,66 @@ var Faq = function (_React$Component) {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "h4",
             null,
-            "Tips to acheive"
+            "Testimonial"
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
             { className: "row" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               "div",
-              { className: "col s12 m12 l12" },
+              { className: "col s12 m12 l12 testimonial-container" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/home-progress.jpg", className: "col s12 m6 l4" }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "question col s12 m12 l12" },
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare consectetur est, id placerat est accumsan eget?"
+                { className: "col s12 m6 l8" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "content" },
+                  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "author right" },
+                  "- Lorem Ipsum"
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "col s12 m12 l12 testimonial-container" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "col s12 m6 l8" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "content" },
+                  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "author left" },
+                  "- Lorem Ipsum"
+                )
               ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/home-pain.jpg", className: "col s12 m6 l4" })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "col s12 m12 l12 testimonial-container" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "images/home-passion.jpg", className: "col s12 m6 l4" }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "answer col s12 m12 l12" },
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "question col s12 m12 l12" },
-                "Cras convallis felis eget leo sollicitudin laoreet. Etiam tincidunt felis libero, a eleifend purus fermentum vitae?"
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "answer col s12 m12 l12" },
-                "Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pulvinar ac lectus sit amet tristique."
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "question col s12 m12 l12" },
-                "Phasellus commodo euismod risus, nec maximus mi gravida et?"
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "answer col s12 m12 l12" },
-                "Morbi bibendum placerat nibh et efficitur. Suspendisse et erat ut sapien finibus varius. Pellentesque rhoncus velit nisi, non congue neque faucibus quis."
+                { className: "col s12 m6 l8" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "content" },
+                  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "p",
+                  { className: "author right" },
+                  "- Lorem Ipsum"
+                )
               )
             )
           )
