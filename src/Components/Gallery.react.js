@@ -183,7 +183,7 @@ class Gallery extends React.Component {
               <div className="col s12 m6 l4">
                 <div className="card">
                   <div className="card-image">
-                    <img className="image" src="images/gallery-bootcamp.jpg" alt="Picture"/>
+                    <img className="image" src="images/gallery-bootcamp.JPG" alt="Picture"/>
                     <span className="card-title">Boot Camp</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
@@ -198,7 +198,7 @@ class Gallery extends React.Component {
               <div className="col s12 m6 l4">
                 <div className="card">
                   <div className="card-image">
-                    <img className="image" src="images/gallery-beach-cardio.jpg" alt="Picture"/>
+                    <img className="image" src="images/gallery-beach-cardio.JPG" alt="Picture"/>
                     <span className="card-title">Beach Cardio</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
@@ -213,7 +213,7 @@ class Gallery extends React.Component {
               <div className="col s12 m6 l4">
                 <div className="card">
                   <div className="card-image">
-                    <img className="image" src="images/gallery-special-cardio.jpg" alt="Picture"/>
+                    <img className="image" src="images/gallery-special-cardio.JPG" alt="Picture"/>
                     <span className="card-title">Special Cardio Training</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
@@ -252,7 +252,7 @@ class Gallery extends React.Component {
                   return (
                     <li key={number} className="col s4 m3 l2">
                       <img className="album-image"
-                        src={"images/album-bootcamp-" + number +".jpg"}/>
+                        src={"images/album-bootcamp-" + number +".JPG"}/>
                     </li>
                   )
                 })
@@ -264,7 +264,7 @@ class Gallery extends React.Component {
                   return (
                     <li key={number} className="col s4 m3 l2">
                       <img className="album-image"
-                        src={"images/album-beachcardio-" + number +".jpg"}/>
+                        src={"images/album-beachcardio-" + number +".JPG"}/>
                     </li>
                   )
                 })
