@@ -28837,9 +28837,57 @@ var About = function (_React$Component) {
                 "div",
                 { className: "margin-tb-10" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "h5",
+                  { className: "about-text" },
+                  "As a Certified Personal Trainer we are,"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   "span",
                   { className: "content" },
-                  "We offer the best service to solve your fitness problems, whatever your life style may be after all the complex structure of our body-core is identical for all human beings."
+                  "Hired to instruct groups of individuals in exercise activities and the fundamentals of sports. Required to explain the scientifically proven fitness-techniques with ample data and practical demonstration methods of participation. Expected to keenly observe and evaluate the level of the clients\u2019 progress and advice them suitably. Asked to facilitate \u2018on-site\u2019 training sessions and \u2018Informational Workshops\u2019 providing the clients with valuable in-puts for taking healthy Life-decisions\u2019."
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "margin-tb-10" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "h5",
+                  { className: "about-text" },
+                  "As an experienced Fitness Professional, the span of our activities include,"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  "ul",
+                  { className: "about-list" },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 Enforce safety regulations governing sports, recreational activities and practical use of various types of Fitness exercise equipments."
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 Create specially customized programs for specific groups and individuals."
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 Offer alternative exercises during classes to accommodate different levels of fitness."
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 Teach proper breathing techniques that must be followed during physical exertion."
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 Monitor participants\u2019 progress and adapt suitable programs accordingly."
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "list-item" },
+                    "\u2022 If necessary, obtain opinions of experts in other allied fields like Physiologist, Doctors, Nutrition\u2019s etc before prescribing special programs and diet regimens."
+                  )
                 )
               )
             ),
