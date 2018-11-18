@@ -1,10 +1,14 @@
 .pcube-ui {
   .ui-footer {
-    background-color: $white;
+    background-color: #000000;
     box-shadow: 0 0 5px $grey;
     color: $medium-black;
+    border-top: 10px solid #3396ff;
     .footer-copyright {
-      color: $medium-black;
+      background-color: #3396ff;
+      .container {
+        color: #000000;
+      }
     }
   }
 }

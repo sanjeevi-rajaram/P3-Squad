@@ -37,6 +37,7 @@
     "jquery": "^3.2.1",
     "materialize": "^0.100.2",
     "img-viewerjs": "^1.1.0",
-    "emailjs-com": "^2.2.4"
+    "emailjs-com": "^2.2.4",
+    "animate.css": "^3.7.0"
   }
 }

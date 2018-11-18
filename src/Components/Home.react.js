@@ -48,45 +48,43 @@ class Home extends React.Component {
       <div className="ui-home">
         <div className="parallax-container">
           <div className="parallax">
-            <img src="images/home-parallax-1.jpg"/>
+            <img src="images/home-parallax-1.jpg" className="animated fadeIn"/>
           </div>
         </div>
-        <div className="section white">
-          <div className="row container">
+        <div className="section home-section animated fadeIn">
+          <div className="row container home-content-container">
             <h2 className="header">P3-Squad</h2>
             <div className="row">
               <div className="col s12 m4 l3">
-                <img className="col s12 m12 l12" src="images/profile.jpg"/>
+                <img className="col s12 m12 l12 profile-image"
+                  src="images/profile.jpg"/>
                 <button onClick={this.openModal}
-                  className="col s12 m12 l12 btn black mail-button waves-effect waves-light">
+                  className="col s12 m12 l12 btn mail-button waves-effect waves-light">
                   Contact
                   <i className="material-icons">mail</i>
                 </button>
               </div>
               <div className="col s12 m8 l9">
-                <p className="grey-text home-content text-darken-3">
-                  Sanjeevi Rajaram is the creator of P3 Fitness Squad, whose
-                  magic mantra in Life - Pain, Passion and Progress is put to a
-                  Productive Practice in this venture. Well Sanjeevi Rajaram is
-                  the proud holder of the Prestigious award presented by –
-                  ISSA (USA ) :- International Sports Sciences Association,
-                  For&nbsp;
-                  <span className="bold-text">
-                    “Professional  Fitness Trainer“
-                  </span>
-                  , a certificate of Merit, for the Successful completion of the
-                  course of Physical Fitness Training Conducted by them.
-                  With amazing persistence
-                  during the past 10 years, he struggled and worked any planned.
-                  To keep with the modern developments in the field, he is also
-                  regularly updating his physical Training expertise, through
-                  specialized programme of&nbsp;
-                  <span className="bold-text">
-                    “Pilates Training“
-                  </span>
-                  &nbsp;from GAYO FITNESS
-                  ACADEMY, Mumbai in order to train its members with the latest
-                  advances in the Art and Science of Physical fitness.
+                <p className="home-content text-darken-3">
+                  Organized, trained, developed, and inspired a high-performing
+                  team charged with serving more than 1000 clients in Chennai,
+                  Tamil Nadu. Assisted numerous clients in developing fitness
+                  and nutrition programmes and losing weight. The list of
+                  satisfied clients is a source of encouragement to our
+                  ambitious plans.
+                </p>
+                <p className="home-content title text-darken-3">
+                  Launched the holistic wellness venture:
+                </p>
+                <p className="home-content title-2 text-darken-3">
+                  P3 – FITNESS SQUAD (Pain, Passion, Progress) in 2015
+                </p>
+                <p className="home-content text-darken-3">
+                  This is the distinguished fitness and nutrition endeavour and
+                  charged with a mission to provide personalized fitness and
+                  wellness programs employing holistic, mind, and body
+                  philosophies in order to help clients achieve their
+                  Life-time health and fitness goals with ease.
                 </p>
               </div>
             </div>
@@ -126,7 +124,7 @@ class Home extends React.Component {
         </div>
         <div className="parallax-container">
           <div className="parallax">
-            <img src="images/home-parallax-2.jpg"/>
+            <img src="images/home-parallax-2.jpg" className="animated fadeIn"/>
           </div>
         </div>
         <div id="mail-modal" className="modal mail-modal modal-fixed-footer">

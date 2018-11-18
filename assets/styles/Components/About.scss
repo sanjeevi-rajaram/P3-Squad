@@ -1,23 +1,39 @@
 .pcube-ui {
   .ui-about {
+    .about-text {
+      color: #3396ff;
+    }
     .quote-container {
       min-width: 100%;
       text-align: center;
       .quote {
+        color: #e3e812;
         font-size: 24px;
         font-weight: 700;
         text-align: center;
       }
     }
     .content {
+      color: #ffffff;
       font-size: 18px;
     }
     .collection {
       margin-top: 25px;
+      .collection-item {
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 20px;
+      }
       .secondary-content {
         .material-icons {
           color: $black;
         }
+      }
+    }
+    .about-list {
+      .list-item {
+        color: #ffffff;
+        font-size: 20px;
       }
     }
     .card {

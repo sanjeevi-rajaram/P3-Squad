@@ -1,9 +1,10 @@
 .pcube-ui {
   .ui-gallery {
     .slider {
+      z-index: 0;
       .indicator-item {
         &.active {
-          background-color: $medium-black;
+          background-color: #3396ff;
         }
       }
     }
@@ -12,29 +13,41 @@
       margin: 20px 0;
     }
     .card {
+      background-color: #dddfe2;
       .btn-floating {
         background-color: $black !important;
       }
     }
     .gallery-album {
+      background-color: #1e1e1e;
       max-height: 80%;
       .album-image {
         width: 100%;
       }
+      .close-icon {
+        color: #3396ff;
+      }
+    }
+    .gallery-text {
+      color: #3396ff;
     }
     .content {
+      color: #ffffff;
       font-size: 18px;
       text-align: justify;
+      .label-text {
+        color: #e3e812;
+      }
     }
     .album-tabs {
       background-color: transparent;
       .tab {
         a {
-          color: $black;
+          color: #3396ff;
         }
       }
       .indicator {
-        background-color: $black;
+        background-color: #3396ff;
       }
     }
   }

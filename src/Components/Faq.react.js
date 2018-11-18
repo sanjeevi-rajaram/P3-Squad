@@ -10,40 +10,55 @@ class Faq extends React.Component {
     return (
       <div className="ui-faq">
         <div className="container">
-          <h4>Testimonial</h4>
+          <h4 className="faq-text">Testimonial</h4>
           <div className="row">
             <div className="col s12 m12 l12 testimonial-container">
               <img src="images/home-progress.jpg" className="col s12 m6 l4"/>
               <div className="col s12 m6 l8">
-                <p className="content">
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <p className="author">
+                  As a Certified Personal Trainer i am,
                 </p>
-                <p className="author right">
-                  - Lorem Ipsum
+                <p className="content">
+                  Hired to instruct groups of individuals in exercise activities
+                  and the fundamentals of sports. Required to explain the
+                  scientifically proven fitness-techniques with ample data and
+                  practical demonstration methods of participation. Expected to
+                  keenly observe and evaluate the level of the clients’ progress
+                  and advice them suitably. Asked to facilitate ‘on-site’
+                  training sessions and ‘’Informational Workshops’ providing
+                  the clients with valuable in-puts for taking
+                  healthy Life-decisions’.
                 </p>
               </div>
             </div>
             <div className="col s12 m12 l12 testimonial-container">
               <div className="col s12 m6 l8">
-                <p className="content">
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <p className="author">
+                  As an experienced Fitness Professional, the span of his activities include,
                 </p>
-                <p className="author left">
-                  - Lorem Ipsum
-                </p>
+                <ul className="content">
+                  <li>
+                    •	Enforce safety regulations governing sports, recreational activities and practical use of various types of Fitness exercise equipments.
+                  </li>
+                  <li>
+                    •	Create specially customized programs for specific groups and individuals.
+                  </li>
+                  <li>
+                    •	Offer alternative exercises during classes to accommodate different levels of fitness.
+                  </li>
+                  <li>
+                    •	Teach proper breathing techniques that must be followed during physical exertion.
+                  </li>
+                  <li>
+                    •	Monitor participants’ progress and adapt suitable programs accordingly.
+                  </li>
+                  <li>
+                    •	If necessary, obtain opinions of experts in other allied fields like Physiologist, Doctors, Nutrition’s etc before prescribing special programs and diet regimens.
+                    This becomes very essential a specially while we train certain high-profile clientele.
+                  </li>
+                </ul>
               </div>
               <img src="images/home-pain.jpg" className="col s12 m6 l4"/>
-            </div>
-            <div className="col s12 m12 l12 testimonial-container">
-              <img src="images/home-passion.jpg" className="col s12 m6 l4"/>
-              <div className="col s12 m6 l8">
-                <p className="content">
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                </p>
-                <p className="author right">
-                  - Lorem Ipsum
-                </p>
-              </div>
             </div>
           </div>
         </div>

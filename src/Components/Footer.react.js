@@ -13,16 +13,23 @@ class Footer extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col s12 m8 l8">
-              <h5>Excaliburs-P3</h5>
+              <h5 className="white-text">P3-Squad</h5>
               <div className="col s6 m6 l6">
-                <p>Ekkatuthangal</p>
-                <p>Adyar</p>
+                <p className="white-text">
+                  Excalibur Gym, Sundar nagar, Guindy.
+                </p>
+                <p className="white-text">
+                  Cell : 7358181100 / 9176668620
+                </p>
+                <p className="white-text">
+                  Email :  Sanjeevi.rajaram @ gmail.com
+                </p>
               </div>
               <div className="col s6 m6 l6">
               </div>
             </div>
             <div className="col s12 m4 l4">
-              <h5>Links</h5>
+              <h5 className="white-text">Links</h5>
               <div>
                 <FBPage appId="383211488859037"
                   href="https://www.facebook.com/PainPassionProgress/"

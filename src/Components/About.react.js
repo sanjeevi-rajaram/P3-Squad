@@ -12,7 +12,7 @@ class About extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col s12 m12 l12">
-              <h3>About Us</h3>
+              <h3 className="about-text">About Us</h3>
               <div className="margin-tb-10">
                 <span className="content">
                   We are one of the most dedicated
@@ -48,131 +48,53 @@ class About extends React.Component {
               </div>
             </div>
             <div className="col s12 m12 l12">
-              <h5>Our P-3 Fitness squad organizes,</h5>
+              <h5 className="about-text">Our P-3 Fitness squad organizes,</h5>
               <ul className="collection">
                 <li className="collection-item">
-                  <div>
-                    <div className="secondary-content">
-                      <i className="material-icons">person</i>
-                    </div>
-                    Personal Trainings
-                  </div>
+                  Fitness Programme Development
                 </li>
                 <li className="collection-item">
-                  <div>
-                    <div className="secondary-content">
-                      <i className="material-icons">beenhere</i>
-                    </div>
-                    Indoor Gym workouts
-                  </div>
+                  Bootcamps
                 </li>
                 <li className="collection-item">
-                  <div>
-                    <div className="secondary-content">
-                      <i className="material-icons">place</i>
-                    </div>
-                    Outdoor special Cardio sessions
-                  </div>
+                  Pilates
                 </li>
                 <li className="collection-item">
-                  <div>
-                    <div className="secondary-content">
-                      <i className="material-icons">directions_run</i>
-                    </div>
-                    Diabetes fitness training
-                  </div>
+                  HIIT / Tabata
                 </li>
                 <li className="collection-item">
-                  <div>
-                    <div className="secondary-content">
-                      <i className="material-icons">wb_sunny</i>
-                    </div>
-                    Summer boot camp
-                  </div>
+                  Group Fitness plans
+                </li>
+                <li className="collection-item">
+                  Nutrition plan
+                </li>
+                <li className="collection-item">
+                  Strength Training
+                </li>
+                <li className="collection-item">
+                  Flexibility Training
+                </li>
+                <li className="collection-item">
+                  Team work
                 </li>
               </ul>
             </div>
             <div className="col s12 m12 l12">
-              <h5>Why do you need a personal trainer?</h5>
-              <div className="margin-b-10 margin-t-20">
-                <span className="content">
-                  A <span className="bold-text">Personal trainer</span>&nbsp;
-                  is the fitness professional and the
-                  motivation you need. Your personal trainer is extremely
-                  important to your fitness success. Once the goals are set,
-                  a personal trainer will teach proper exercise methods and
-                  progressions. Each piece of information taught has one
-                  purpose:&nbsp;
-                  <span className="bold-text">to reach your fitness goals</span>
-                  .
-                </span>
-              </div>
-            </div>
-            <div className="col s12 m12 l12">
-              <h5>Advantages of Commercial Gym</h5>
-              <div className="col s12 m12 l12">
-                <div className="card horizontal">
-                  <div className="card-image">
-                    <img src="images/about-1.jpg"/>
-                  </div>
-                  <div className="card-stacked">
-                    <div className="card-content">
-                      <p>
-                        Commercial gyms will be filled with every imaginable
-                        option in training equipment; from barbells, dumbbells
-                        and kettlebells to advanced variable
-                        resistance training machines
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m12 l12">
-                <div className="card horizontal">
-                  <div className="card-stacked">
-                    <div className="card-content">
-                      <p>
-                        A commercial gym can be a great combination of
-                        self-improvement and social club, making exercise
-                        a way to make new friends and network
-                      </p>
-                    </div>
-                  </div>
-                  <div className="card-image">
-                    <img src="images/about-2.png"/>
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m12 l12">
-                <div className="card horizontal">
-                  <div className="card-image">
-                    <img src="images/about-3.png"/>
-                  </div>
-                  <div className="card-stacked">
-                    <div className="card-content">
-                      <p>
-                        If you want to try a new training protocol,
-                        the equipment you need will be there
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m12 l12">
-                <div className="card horizontal">
-                  <div className="card-stacked">
-                    <div className="card-content">
-                      <p>
-                        If you get bored with your routine, changing things up
-                        is as easy as walking across the gym floor
-                      </p>
-                    </div>
-                  </div>
-                  <div className="card-image">
-                    <img src="images/about-4.png"/>
-                  </div>
-                </div>
-              </div>
+              <h5 className="about-text">Our specialization includes,</h5>
+              <ul className="about-list">
+                <li className="list-item">
+                  •	Directing and promoting their training activities
+                </li>
+                <li className="list-item">
+                  •	Successfully  conducting their out-door sessions
+                </li>
+                <li className="list-item">
+                  •	Organizing Corporate Fitness Awareness Seminars
+                </li>
+                <li className="list-item">
+                  •	And arranging Beach Boot-Camps for the past seven years
+                </li>
+              </ul>
             </div>
           </div>
         </div>

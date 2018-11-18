@@ -4,7 +4,7 @@ class Action extends React.Component {
   render() {
     return (
       <div className="ui-action fixed-action-btn horizontal click-to-toggle">
-        <a className="btn-floating btn-large black">
+        <a className="btn-floating btn-large">
           <i className="large material-icons">notifications</i>
         </a>
         <ul>

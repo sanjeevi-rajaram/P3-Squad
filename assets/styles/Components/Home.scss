@@ -1,5 +1,8 @@
 .pcube-ui {
   .ui-home {
+    .parallax {
+      z-index: 0;
+    }
     .parallax-content {
       min-width: 100%;
       position: absolute;
@@ -13,6 +16,37 @@
         font-size: 28px;
       }
     }
+    .home-section {
+      background-image: url("images/home-background.jpg");
+      background-repeat: round;
+      border-bottom: 10px solid #3396ff;
+      border-top: 10px solid #3396ff;
+      .home-content-container {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .header {
+        color: #e3e812;
+        font-weight: 500;
+      }
+      .home-content {
+        color: #ffffff !important;
+        &.title {
+          color: #3396ff !important;
+          font-weight: 600;
+          margin-top: 20px;
+        }
+        &.title-2 {
+          color: #e3e812 !important;
+        }
+      }
+      .mail-button {
+        background-color: #3396ff;
+      }
+      .profile-image {
+        border: 5px solid #3396ff;
+        padding: 0;
+      }
+    }
     .card {
       height: 280px;
       .card-image {
@@ -24,7 +58,7 @@
       }
     }
     .home-content {
-      font-size: 18px;
+      font-size: 22px;
       margin: 0;
       text-align: justify;
     }

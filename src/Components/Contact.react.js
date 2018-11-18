@@ -17,10 +17,10 @@ class Contact extends React.Component {
             <div className="col s12 m12 l12">
               <ul className="tabs">
                 <li className="tab col s3 m3 l3">
-                  <a href="#facebook">Facebook</a>
+                  <a className="active" href="#facebook">Facebook</a>
                 </li>
                 <li className="tab col s3 m3 l3">
-                  <a className="active" href="#instagram">Instagram</a>
+                  <a href="#instagram">Instagram</a>
                 </li>
                 <li className="tab col s3 m3 l3">
                   <a href="#others">Others</a>
@@ -75,21 +75,21 @@ class Contact extends React.Component {
           <div id="instagram" className="row">
             <div className="col s12 m4 l4">
               <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/Bjg0Bx3HXSm/"
+                <InstagramEmbed url="https://www.instagram.com/p/BqHiNG5F_Z6HKWmZKMF6M6oVJFgsiO8mSIO3Lk0/"
                   maxWidth={350}>
                 </InstagramEmbed>
               </div>
             </div>
             <div className="col s12 m4 l4">
               <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/BjOsFMhHRcS/"
+                <InstagramEmbed url="https://www.instagram.com/p/Bn_R4QCDNlB3D54IGfMEdpQGvYV7PSFR-i_Thk0/"
                   maxWidth={350}>
                 </InstagramEmbed>
               </div>
             </div>
             <div className="col s12 m4 l4">
               <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/Bfphczuh1Dp/"
+                <InstagramEmbed url="https://www.instagram.com/p/Bn_RKv2jfNdCA4C_rvjMJk4rbwrAINxOZQydIA0/"
                   maxWidth={350}>
                 </InstagramEmbed>
               </div>

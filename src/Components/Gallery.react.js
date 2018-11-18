@@ -62,7 +62,7 @@ class Gallery extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col s12 m12 l12">
-              <h3>Events</h3>
+              <h3 className="gallery-text">Events</h3>
               <span className="content">
                 If your busy schedule doesn&quot;t allow you to exercise for
                 a 30-minute period during the day, you have the option to
@@ -71,13 +71,13 @@ class Gallery extends React.Component {
               </span>
             </div>
             <div className="col s12 m12 l12">
-              <h5>Personal Training</h5>
+              <h5 className="gallery-text">Personal Training</h5>
               <span className="col s12 m12 l12 content margin-b-10">
                 Two types of physical activity are most important for
                 managing diabetes: aerobic exercise and strength training.
               </span>
               <span className="col s12 m12 l12 content">
-                <span className="bold-text">Aerobic exercise</span>&nbsp;
+                <span className="label-text">Aerobic exercise</span>&nbsp;
                 helps your body use insulin better.
                 It makes your heart and bones strong, relieves stress,
                 improves blood circulation, and reduces your risk for heart
@@ -85,7 +85,7 @@ class Gallery extends React.Component {
                 improving cholesterol levels.
               </span>
               <span className="col s12 m12 l12 content">
-                <span className="bold-text">Strength training</span>&nbsp;
+                <span className="label-text">Strength training</span>&nbsp;
                 (also called resistance training) makes
                 your body more sensitive to insulin and can lower blood
                 glucose. It helps to maintain and build strong muscles and
@@ -168,7 +168,7 @@ class Gallery extends React.Component {
               </div>
             </div>
             <div className="col s12 m12 l12">
-              <h5>Pilates Training</h5>
+              <h5 className="gallery-text">Pilates Training</h5>
               <span className="col s12 m12 l12 content">
                   Exercising outdoors provides an opportunity to be physically
                   active in a constantly changing environment. The more
@@ -241,7 +241,7 @@ class Gallery extends React.Component {
                   </li>
                 </ul>
               </div>
-              <i className="col s1 m1 l1 material-icons pointer"
+              <i className="col s1 m1 l1 material-icons close-icon pointer"
                 onClick={() => this.closeAlbum("1")}>
                 clear
               </i>

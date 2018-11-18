@@ -17,10 +17,10 @@ class Header extends React.Component {
   render() {
     return (
       <div className="ui-header">
-        <nav className="nav-header">
+        <nav className="nav-header animate bounceIn">
           <div className="nav-wrapper">
             <NavLink to="/" className="brand-logo">
-              <img src="images/logo.jpg"/>
+              <img src="images/logo.png"/>
             </NavLink>
             <ul className="navigation right hide-on-med-and-down">
               <li>

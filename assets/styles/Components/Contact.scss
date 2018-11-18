@@ -1,17 +1,22 @@
 .pcube-ui {
   .ui-contact {
+    padding-top: 64px;
     .container {
       width: 90%;
     }
+    .fb-post {
+      background-color: white;
+    }
     .tabs {
+      background-color: transparent;
       margin-top: 20px;
       .tab {
         a {
-          color: $black;
+          color: #3396ff;
         }
       }
       .indicator {
-        background-color: $black;
+        background-color: #3396ff;
       }
     }
     .empty-content {
