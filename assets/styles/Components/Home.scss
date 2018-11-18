@@ -1,5 +1,12 @@
 .pcube-ui {
   .ui-home {
+    .issa-logo-container {
+      text-align: center;
+      .issa-logo {
+        height: 120px;
+        width: 120px;
+      }
+    }
     .parallax {
       z-index: 0;
     }
@@ -38,6 +45,9 @@
         }
         &.title-2 {
           color: #e3e812 !important;
+        }
+        .name {
+          color: #e3e812;
         }
       }
       .mail-button {

@@ -26,6 +26,7 @@ class Footer extends React.Component {
                 </p>
               </div>
               <div className="col s6 m6 l6">
+                <img className="issa-logo" src="images/ISSA-logo.gif"/>
               </div>
             </div>
             <div className="col s12 m4 l4">

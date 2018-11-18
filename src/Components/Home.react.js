@@ -68,9 +68,13 @@ class Home extends React.Component {
                   Contact
                   <i className="material-icons">mail</i>
                 </button>
+                <div className="col s12 m12 l12 issa-logo-container">
+                  <img className="issa-logo" src="images/ISSA-logo.gif"/>
+                </div>
               </div>
               <div className="col s12 m8 l9">
                 <p className="home-content text-darken-3">
+                  <span className="name">Sanjeevi Rajaram</span>&nbsp;
                   Organized, trained, developed, and inspired a high-performing
                   team charged with serving more than 1000 clients in Chennai,
                   Tamil Nadu. Assisted numerous clients in developing fitness
