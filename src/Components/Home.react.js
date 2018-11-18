@@ -15,7 +15,7 @@ class Home extends React.Component {
     this.el = $(ReactDOM.findDOMNode(this));
     this.el.find(".parallax").parallax();
     this.el.find("#mail-modal").modal();
-    emailjs.init("user_UTwMgKiQQRCc4q7RRqDqi");
+    emailjs.init("user_vVFSGdTgGMkzTDrEivdve");
   }
 
   openModal = () => {
@@ -30,15 +30,20 @@ class Home extends React.Component {
 
   sendMail = () => {
     const {name, email, message} = this.state;
-    var template_params = {
-       "from_email": email,
-       "from_name": name,
-       "message_html": "<p>" + message + "</p>"
+    const template_params = {
+      "from_email": email,
+      "from_name": name,
+      "message_html": "<p>" + message + "</p>"
+    };
+    const user_params = {
+      "from_email": email,
+      "from_name": name
     };
     var service_id = "gmail";
     var template_id = "p3_squad";
     if (!this.el.find(".validate").hasClass("invalid") && name && email && message) {
-      emailjs.send(service_id,template_id,template_params);
+      emailjs.send("gmail", "p3_squad", template_params);
+      emailjs.send("gmail", "p3_squad_user", user_params);
       this.el.find("#mail-modal").modal("close");
     }
   }
@@ -136,9 +141,9 @@ class Home extends React.Component {
             <div className="row">
               <div className="col s12 m12 l12 input-field">
                 <i className="material-icons prefix">person</i>
-                <input placeholder="Name" name="name" type="text" required
+                <input placeholder="Full Name" name="name" type="text" required
                   onChange={this.handleFieldChange} className="validate"/>
-                <label htmlFor="name">First Name</label>
+                <label htmlFor="name">Full Name</label>
               </div>
               <div className="col s12 m12 l12 input-field">
                 <i className="material-icons prefix">phone</i>

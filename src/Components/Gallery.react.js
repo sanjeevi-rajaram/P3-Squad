@@ -140,7 +140,7 @@ class Gallery extends React.Component {
                 <div className="card">
                   <div className="card-image">
                     <img className="image" src="images/gallery-transform.JPG" alt="Picture"/>
-                    <span className="card-title">Transform</span>
+                    <span className="card-title">Strength Training</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
                       <i className="material-icons">launch</i>
@@ -155,7 +155,22 @@ class Gallery extends React.Component {
                 <div className="card">
                   <div className="card-image">
                     <img className="image" src="images/gallery-strength-training.jpg" alt="Picture"/>
-                    <span className="card-title">Strength Training</span>
+                    <span className="card-title">Transform</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>Duration : 8 to 12 weeks</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col s12 m6 l4">
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/gallery-core-training.JPG" alt="Picture"/>
+                    <span className="card-title">Core Training</span>
                     <a onClick={() => this.openAlbum("1")}
                       className="btn-floating halfway-fab waves-effect red">
                       <i className="material-icons">launch</i>
@@ -168,7 +183,7 @@ class Gallery extends React.Component {
               </div>
             </div>
             <div className="col s12 m12 l12">
-              <h5 className="gallery-text">Pilates Training</h5>
+              <h5 className="gallery-text">Outdoor Training</h5>
               <span className="col s12 m12 l12 content">
                   Exercising outdoors provides an opportunity to be physically
                   active in a constantly changing environment. The more

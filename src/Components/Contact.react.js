@@ -6,7 +6,6 @@ import InstagramEmbed from "react-instagram-embed";
 class Contact extends React.Component {
   componentDidMount() {
     this.el = $(ReactDOM.findDOMNode(this));
-    this.el.find(".tabs").tabs();
   }
 
   render() {
@@ -14,21 +13,6 @@ class Contact extends React.Component {
       <div className="ui-contact">
         <div className="container">
           <div className="row">
-            <div className="col s12 m12 l12">
-              <ul className="tabs">
-                <li className="tab col s3 m3 l3">
-                  <a className="active" href="#facebook">Facebook</a>
-                </li>
-                <li className="tab col s3 m3 l3">
-                  <a href="#instagram">Instagram</a>
-                </li>
-                <li className="tab col s3 m3 l3">
-                  <a href="#others">Others</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="facebook" className="row">
             <div className="col s12 m4 l4">
               <div className="col s12 m12 l12 margin-b-10">
                 <FBEmbedPost appId="383211488859037"
@@ -70,34 +54,6 @@ class Contact extends React.Component {
                   width={350}>
                 </FBEmbedPost>
               </div>
-            </div>
-          </div>
-          <div id="instagram" className="row">
-            <div className="col s12 m4 l4">
-              <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/BqHiNG5F_Z6HKWmZKMF6M6oVJFgsiO8mSIO3Lk0/"
-                  maxWidth={350}>
-                </InstagramEmbed>
-              </div>
-            </div>
-            <div className="col s12 m4 l4">
-              <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/Bn_R4QCDNlB3D54IGfMEdpQGvYV7PSFR-i_Thk0/"
-                  maxWidth={350}>
-                </InstagramEmbed>
-              </div>
-            </div>
-            <div className="col s12 m4 l4">
-              <div className="col s12 m12 l12 margin-b-10">
-                <InstagramEmbed url="https://www.instagram.com/p/Bn_RKv2jfNdCA4C_rvjMJk4rbwrAINxOZQydIA0/"
-                  maxWidth={350}>
-                </InstagramEmbed>
-              </div>
-            </div>
-          </div>
-          <div id="others" className="row">
-            <div className="col s12 m12 l12 center-text empty-content">
-              No Content
             </div>
           </div>
         </div>

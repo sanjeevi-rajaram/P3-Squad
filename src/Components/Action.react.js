@@ -22,7 +22,7 @@ class Action extends React.Component {
           </li>
           <li>
             <a className="btn-floating instagram"
-              href="https://www.instagram.com/pain_passion_progress_p3_/">
+              href="https://www.instagram.com/fitnesstrainerp3/">
               <img src="images/instagram-logo.jpg"/>
             </a>
           </li>

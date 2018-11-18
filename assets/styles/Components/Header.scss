@@ -36,5 +36,16 @@
         }
       }
     }
+    .mail-header {
+      border-bottom: 1px solid $light-grey;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      .header {
+        margin: 0;
+      }
+      .material-icons {
+        float: right;
+      }
+    }
   }
 }
