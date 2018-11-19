@@ -40,11 +40,53 @@ class About extends React.Component {
                 </span>
               </div>
               <div className="margin-tb-10">
+                <h5 className="about-text">
+                  As a Certified Personal Trainer we are,
+                </h5>
                 <span className="content">
-                  We offer the best service to solve your fitness problems,
-                  whatever your life style may be after all the complex structure
-                  of our body-core is identical for all human beings.
+                  Hired to instruct groups of individuals in exercise activities
+                  and the fundamentals of sports. Required to explain the
+                  scientifically proven fitness-techniques with ample data and
+                  practical demonstration methods of participation.
+                  Expected to keenly observe and evaluate the level of the
+                  clients’ progress and advice them suitably. Asked to
+                  facilitate ‘on-site’ training sessions and
+                  ‘Informational Workshops’ providing the clients
+                  with valuable in-puts for taking healthy Life-decisions’.
                 </span>
+              </div>
+              <div className="margin-tb-10">
+                <h5 className="about-text">
+                  As an experienced Fitness Professional, the span of our
+                  activities include,
+                </h5>
+                <ul className="about-list">
+                  <li className="list-item">
+                    •	Enforce safety regulations governing sports,
+                    recreational activities and practical use of
+                    various types of Fitness exercise equipments.
+                  </li>
+                  <li className="list-item">
+                    •	Create specially customized programs for specific
+                    groups and individuals.
+                  </li>
+                  <li className="list-item">
+                    •	Offer alternative exercises during classes to
+                    accommodate different levels of fitness.
+                  </li>
+                  <li className="list-item">
+                    •	Teach proper breathing techniques that must be
+                    followed during physical exertion.
+                  </li>
+                  <li className="list-item">
+                    •	Monitor participants’ progress and adapt suitable programs accordingly.
+                  </li>
+                  <li className="list-item">
+                    •	If necessary, obtain opinions of experts in other allied
+                    fields like Physiologist, Doctors, Nutrition’s etc before
+                    prescribing special programs and diet regimens.
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="col s12 m12 l12">
